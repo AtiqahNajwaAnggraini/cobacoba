@@ -1,0 +1,55 @@
+jawab="ya"
+while(jawab=="ya"):
+      print()
+      print("""Silahkan pilih luas yang akan dihitung ?
+      1. Persegi
+      2. Persegi Panjang
+      3. Segitiga""")
+      pilih=input("Silahkan masukkan bangun yang akan dihitung (1-3) : ")
+      if(pilih=="1"):
+            print()
+            print("Pilihan anda Persegi")
+            print()
+            print("Menghitung Luas Persegi")
+            print()
+            s=input("Masukkan Sisi : ")
+            si=int(s)
+            luas = (si*si)
+            print()
+            print("=====================================================================")
+            print("perhitungan luas dari bangun persegi dengan Sisi : "+s+" adalahsebesar "+str(luas)+" m2")
+            print("=====================================================================")
+      elif(pilih=="2"):
+            print()
+            print("Pilihan anda Persegi Panjang")
+            print()
+            print("Menghitung Luas Persegi Panjang")
+            print()
+            p=input("Masukkan panjang : ")
+            l=input("Masukkan lebar : ")
+            pi=int(p)
+            li=int(l)
+            luas=(pi*li)
+            print()
+            print("=====================================================================")
+            print("perhitungan luas dari bangun persegi panjang dengan panjang :"+p+" dan lebar : "+l+" adalah sebesar "+str(luas)+" m2")
+            print("=====================================================================")
+      elif(pilih=="3"):
+            print()
+            print("Pilihan anda Segitiga")
+            print()
+            print("Menghitung Luas Segitiga")
+            print()
+            a=input("Masukkan Alas : ")
+            t=input("Masukkan Tinggi : ")
+            ai=int(a)
+            ti=int(t)
+            luas=(1/2*ai*ti)
+            print()
+            print("=====================================================================")
+            print("Perhitungan luas dari bangun ruang segitiga dengan alas : "+a+"dan tinggi : "+t+" adalah sebesar : "+str(luas)+" m2")
+            print("=====================================================================")
+      else:
+            print("Pilihan anda salah")
+      jawab=input("Apakah anda ingin mengulang dan menghitung luas yang lain? [ya/tidak]")
+
